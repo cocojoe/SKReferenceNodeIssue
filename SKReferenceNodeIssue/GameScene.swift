@@ -12,7 +12,8 @@ class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
      
-        let spaceShip = SKReferenceNode.init(fileNamed: "SpaceShip")!
+        let path = NSBundle.mainBundle().pathForResource("SpaceShip", ofType: "sks")
+        let spaceShip = SKReferenceNode (URL: NSURL (fileURLWithPath: path!))
         addChild(spaceShip)
     }
     
