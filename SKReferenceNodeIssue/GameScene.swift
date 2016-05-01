@@ -12,7 +12,7 @@ class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
      
-        let spaceShip = SKReferenceNode.init(fileNamed: "SpaceShip") as SKReferenceNode!
+        let spaceShip = SKReferenceNode.init(fileNamed: "SpaceShip")!
         addChild(spaceShip)
     }
     
